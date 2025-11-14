@@ -11,7 +11,7 @@
 
 body {
   background-color: var(--color-white);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -28,7 +28,7 @@ header {
   gap: 1rem;
 
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .header-image {
@@ -103,8 +103,8 @@ header {
 /* About Section */
 
 .about-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about-wrapper {
