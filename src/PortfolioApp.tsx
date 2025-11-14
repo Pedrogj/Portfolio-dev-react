@@ -1,10 +1,10 @@
-import { Header } from "./components";
+import { AboutSection, Header } from "./components";
 
 export const PortfolioApp = () => {
   return (
     <div className="container">
       <Header />
-      <main></main>
+      <AboutSection />
       <footer></footer>
     </div>
   );
