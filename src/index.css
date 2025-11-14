@@ -20,6 +20,8 @@ body {
   padding: 0 1rem;
 }
 
+/* Header Section */
+
 header {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -96,6 +98,29 @@ header {
 
 .icon-img {
   width: 50px;
+}
+
+/* About Section */
+
+.about-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-wrapper {
+  background-color: var(--background-color);
+  padding: 20px;
+  border: solid rgba(0, 0, 0, 0.199);
+  border-width: 1px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-description {
+  font-size: 18px;
 }
 
 @media (max-width: 980px) {
