@@ -1,7 +1,11 @@
-
+import { Header } from "./components";
 
 export const PortfolioApp = () => {
   return (
-    <div>PortfolioApp</div>
-  )
-}
+    <div className="container">
+      <Header />
+      <main></main>
+      <footer></footer>
+    </div>
+  );
+};
