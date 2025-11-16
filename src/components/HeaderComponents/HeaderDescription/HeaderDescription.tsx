@@ -1,7 +1,7 @@
 import { icons } from "../../../data/data";
 
 export const HeaderDescription = () => {
-  const iconHeader = icons.map((icon) => (
+  const iconHeader = icons.slice(0, 7).map((icon) => (
     <div className="card-icon-header" key={icon.id}>
       <img className="icon-img" src={icon.urlImage} alt={icon.name} />
     </div>

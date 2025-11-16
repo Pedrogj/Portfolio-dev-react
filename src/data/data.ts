@@ -5,6 +5,8 @@ import logoWP from "../../public/images/wordpress.png";
 import logoReact from "../../public/images/react.png";
 import logoTs from "../../public/images/typescript.png";
 import logoSupa from "../../public/images/supabase.png";
+import git from "../../public/images/Git.png";
+import gitHub from "../../public/images/gitHub.png";
 
 import projectImg1 from "../../public/images/project-img.jpg";
 import projectImg2 from "../../public/images/img-project-2.jpg";
@@ -58,6 +60,16 @@ export const icons: DataIcons[] = [
     id: 6,
     name: "Supabase",
     urlImage: logoSupa,
+  },
+  {
+    id: 7,
+    name: "Git",
+    urlImage: git,
+  },
+  {
+    id: 8,
+    name: "GitHub",
+    urlImage: gitHub,
   },
 ];
 
