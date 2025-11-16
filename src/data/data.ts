@@ -12,6 +12,10 @@ import projectImg1 from "../../public/images/project-img.jpg";
 import projectImg2 from "../../public/images/img-project-2.jpg";
 import projectImg3 from "../../public/images/img-project-3.jpg";
 
+import whatsApp from "../../public/images/whatsapp.png";
+import linkedin from "../../public/images/linkedin.png";
+import email from "../../public/images/correo.png";
+
 interface DataIcons {
   id: number;
   name: string;
@@ -23,6 +27,13 @@ interface ProjectData {
   urlImage: string;
   title: string;
   tags: string[];
+}
+
+interface ContactData {
+  id: number;
+  urlImage: string;
+  text: string;
+  link: string;
 }
 
 export const icons: DataIcons[] = [
@@ -91,5 +102,26 @@ export const projects: ProjectData[] = [
     urlImage: projectImg3,
     title: "Title Project 3",
     tags: ["React", "Redux", "Css"],
+  },
+];
+
+export const contactData: ContactData[] = [
+  {
+    id: 1,
+    urlImage: whatsApp,
+    text: "+56 9 7893 8591",
+    link: "https://wa.link/ukbn7q",
+  },
+  {
+    id: 2,
+    urlImage: linkedin,
+    text: "Pedro Perez",
+    link: "www.linkedin.com/in/pedrodev-web",
+  },
+  {
+    id: 3,
+    urlImage: email,
+    text: "pedro@novusdevs.com",
+    link: "mailto:pedro@novusdevs.com",
   },
 ];
