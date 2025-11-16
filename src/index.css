@@ -133,6 +133,11 @@ header {
   padding-bottom: 50px;
 }
 
+.project-description {
+  padding-top: 50px;
+  font-size: 18px;
+}
+
 .project-card-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
