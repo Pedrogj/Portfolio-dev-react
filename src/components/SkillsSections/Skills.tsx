@@ -1,3 +1,5 @@
+import { icons } from "../../data/data";
+
 export const Skills = () => {
   return (
     <div className="skill-container">
@@ -7,10 +9,12 @@ export const Skills = () => {
         digitales funcionales y atractivas.
       </p>
       <div className="skill-icon-wrapper">
-        <div className="skill-card">
-          <img src="" alt="" />
-          <p>name-skill</p>
-        </div>
+        {icons.map((icon) => (
+          <div key={icon.id} className="skill-card">
+            <img src={icon.urlImage} alt={icon.name} />
+            <p>{icon.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

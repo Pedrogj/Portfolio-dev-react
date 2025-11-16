@@ -7,6 +7,8 @@
 :root {
   --color-white: #ffffff;
   --background-color: #f0f1f4;
+  --padingTopContainer: 50px;
+  --padingBottonContainer: 50px;
 }
 
 body {
@@ -103,8 +105,8 @@ header {
 /* About Section */
 
 .about-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: var(--padingTopContainer);
+  padding-bottom: var(--padingBottonContainer);
 }
 
 .about-wrapper {
@@ -125,8 +127,8 @@ header {
 
 /* Projects Section */
 .project-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: var(--padingTopContainer);
+  padding-bottom: var(--padingBottonContainer);
 }
 
 .project-title {
@@ -193,6 +195,40 @@ header {
   padding: 12px 20px;
   text-align: center;
   border-radius: 12px;
+}
+
+/* Skills Section */
+
+.skill-container {
+  padding-top: var(--padingTopContainer);
+  padding-bottom: var(--padingBottonContainer);
+}
+
+.skill-title {
+  padding-bottom: 25px;
+}
+
+.skill-description {
+  font-size: 18px;
+}
+
+.skill-icon-wrapper {
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-card img {
+  width: 80px;
 }
 
 @media (max-width: 980px) {
