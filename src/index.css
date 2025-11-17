@@ -10,11 +10,62 @@
   --padingTopContainer: 50px;
   --padingBottonContainer: 50px;
   --colorTextBlack: #23272f;
+
+  /* Theme dark */
+  --backgroundColorBlack: #333a45;
+  --borderColor: #ffffff2c;
+}
+
+/* Switch moderno */
+
+.switch-content {
+  padding-top: 20px;
+}
+
+.switch-flex {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.switch-button {
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.switch-button .switch-circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.switch-circle.dark {
+  transform: translateX(24px);
+}
+
+.dark .switch-button {
+  background-color: #555;
 }
 
 body {
   background-color: var(--color-white);
   font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark body {
+  background-color: var(--backgroundColorBlack);
+  color: var(--color-white);
 }
 
 .container {
@@ -30,7 +81,7 @@ body {
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
 
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -78,6 +129,10 @@ body {
   background-color: var(--background-color);
   border-radius: 12px;
   padding: 20px;
+}
+
+.header-title {
+  color: var(--colorTextBlack);
 }
 
 .header-p {
@@ -139,10 +194,18 @@ body {
   color: var(--colorTextBlack);
 }
 
+.dark .project-title {
+  color: var(--color-white);
+}
+
 .project-description {
   padding-top: 50px;
   font-size: 18px;
   color: var(--colorTextBlack);
+}
+
+.dark .project-description {
+  color: var(--color-white);
 }
 
 .project-card-wrapper {
@@ -216,9 +279,17 @@ body {
   color: var(--colorTextBlack);
 }
 
+.dark .skill-title {
+  color: var(--color-white);
+}
+
 .skill-description {
   font-size: 18px;
   color: var(--colorTextBlack);
+}
+
+.dark .skill-description {
+  color: var(--color-white);
 }
 
 .skill-icon-wrapper {
@@ -235,6 +306,10 @@ body {
   justify-content: center;
   gap: 10px;
   color: var(--colorTextBlack);
+}
+
+.dark .skill-card {
+  color: var(--color-white);
 }
 
 .skill-card img {
@@ -266,6 +341,10 @@ body {
   color: var(--colorTextBlack);
 }
 
+.dark .contact-link a {
+  color: var(--color-white);
+}
+
 .contact-link img {
   width: 50px;
 }
@@ -279,6 +358,12 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--colorTextBlack);
+}
+
+.dark .footer-container {
+  background-color: var(--colorTextBlack);
+  color: var(--color-white);
+  border-top: solid 1px var(--borderColor);
 }
 
 @media (max-width: 980px) {

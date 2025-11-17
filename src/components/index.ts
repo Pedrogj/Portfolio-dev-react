@@ -4,3 +4,4 @@ export * from './ProjectsSection/Projects';
 export * from './SkillsSections/Skills';
 export * from './ContactSection/Contact';
 export * from './Footer/Footer';
+export * from './ThemeSwitch/ThemeSwitch';
