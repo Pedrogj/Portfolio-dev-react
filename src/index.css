@@ -9,6 +9,7 @@
   --background-color: #f0f1f4;
   --padingTopContainer: 50px;
   --padingBottonContainer: 50px;
+  --colorTextBlack: #23272f;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
 
 .header-p {
   font-size: 20px;
+  color: var(--colorTextBlack);
 }
 
 .header-tech-icon {
@@ -123,6 +125,7 @@ body {
 
 .about-description {
   font-size: 18px;
+  color: var(--colorTextBlack);
 }
 
 /* Projects Section */
@@ -133,11 +136,13 @@ body {
 
 .project-title {
   padding-bottom: 50px;
+  color: var(--colorTextBlack);
 }
 
 .project-description {
   padding-top: 50px;
   font-size: 18px;
+  color: var(--colorTextBlack);
 }
 
 .project-card-wrapper {
@@ -170,6 +175,7 @@ body {
 
 .project-card-title {
   font-size: 20px;
+  color: var(--colorTextBlack);
 }
 
 .project-item-wrapper {
@@ -181,7 +187,8 @@ body {
 .project-item-tecnology {
   font-size: 13px;
   list-style: none;
-  border: solid black;
+  border: solid var(--colorTextBlack);
+  color: var(--colorTextBlack);
   border-width: 1px;
   padding: 4px;
   border-radius: 30px;
@@ -206,10 +213,12 @@ body {
 
 .skill-title {
   padding-bottom: 25px;
+  color: var(--colorTextBlack);
 }
 
 .skill-description {
   font-size: 18px;
+  color: var(--colorTextBlack);
 }
 
 .skill-icon-wrapper {
@@ -225,6 +234,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  color: var(--colorTextBlack);
 }
 
 .skill-card img {
@@ -253,7 +263,7 @@ body {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: inherit;
+  color: var(--colorTextBlack);
 }
 
 .contact-link img {
@@ -264,11 +274,11 @@ body {
 .footer-container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #29768e;
+  background-color: #ecedf1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f0f1f4;
+  color: var(--colorTextBlack);
 }
 
 @media (max-width: 980px) {
