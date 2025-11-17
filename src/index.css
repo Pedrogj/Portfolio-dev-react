@@ -314,4 +314,8 @@ header {
   .project-card-wrapper {
     grid-template-columns: 1fr;
   }
+
+  .skill-icon-wrapper {
+    justify-content: center;
+  }
 }
