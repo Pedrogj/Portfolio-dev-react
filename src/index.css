@@ -13,7 +13,7 @@
 
 body {
   background-color: var(--color-white);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -244,7 +244,7 @@ header {
 
 .contact-items {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
