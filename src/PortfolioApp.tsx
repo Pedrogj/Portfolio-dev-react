@@ -1,4 +1,11 @@
-import { AboutSection, Contact, Header, Projects, Skills } from "./components";
+import {
+  AboutSection,
+  Contact,
+  Footer,
+  Header,
+  Projects,
+  Skills,
+} from './components';
 
 export const PortfolioApp = () => {
   return (
@@ -8,7 +15,7 @@ export const PortfolioApp = () => {
       <Projects />
       <Skills />
       <Contact />
-      <footer></footer>
+      <Footer />
     </div>
   );
 };
