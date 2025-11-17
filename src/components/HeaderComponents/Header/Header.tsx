@@ -1,11 +1,15 @@
-import { HeaderDescription } from "../HeaderDescription/HeaderDescription";
-import { ImageCard } from "../ImageCard/ImageCard";
+import { HeaderDescription } from '../HeaderDescription/HeaderDescription';
+import { ImageCard } from '../ImageCard/ImageCard';
 
 export const Header = () => {
   return (
     <header>
-      <ImageCard />
-      <HeaderDescription />
+      <div className="container">
+        <div className="header-wrapper">
+          <ImageCard />
+          <HeaderDescription />
+        </div>
+      </div>
     </header>
   );
 };
