@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=23282f&c2=333a45&gt=l&gd=dtr
+*/
+/* background: #23282F;
+background: linear-gradient(225deg, #23282F, #333A45); */
+
 :root {
   --color-white: #ffffff;
   --background-color: #f0f1f4;
@@ -14,6 +21,7 @@
   /* Theme dark */
   --backgroundColorBlack: #333a45;
   --borderColor: #ffffff2c;
+  --cardBackgroundDark: #3e444e;
 }
 
 /* Switch moderno */
@@ -131,13 +139,26 @@ body {
   padding: 20px;
 }
 
+.dark .description-content {
+  background-color: var(--cardBackgroundDark);
+  border: solid 1px var(--borderColor);
+}
+
 .header-title {
   color: var(--colorTextBlack);
+}
+
+.dark .header-title {
+  color: var(--color-white);
 }
 
 .header-p {
   font-size: 20px;
   color: var(--colorTextBlack);
+}
+
+.dark .header-p {
+  color: var(--color-white);
 }
 
 .header-tech-icon {
@@ -147,6 +168,11 @@ body {
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
   padding: 15px;
+}
+
+.dark .header-tech-icon {
+  background-color: var(--cardBackgroundDark);
+  border: solid 1px var(--borderColor);
 }
 
 .card-icon-header {
@@ -178,12 +204,27 @@ body {
   gap: 15px;
 }
 
+.dark .about-wrapper {
+  background-color: var(--cardBackgroundDark);
+  border: solid 1px var(--borderColor);
+}
+
 .about-description {
   font-size: 18px;
   color: var(--colorTextBlack);
 }
 
+.dark .about-description {
+  color: var(--color-white);
+}
+
 /* Projects Section */
+
+.dark .projects-section {
+  background: #23282f;
+  background: linear-gradient(225deg, #23282f, #333a45);
+}
+
 .project-container {
   padding-top: var(--padingTopContainer);
   padding-bottom: var(--padingBottonContainer);
@@ -222,6 +263,11 @@ body {
   border-radius: 12px;
 }
 
+.dark .project-card {
+  background-color: var(--cardBackgroundDark);
+  border: solid 1px var(--borderColor);
+}
+
 .img-project {
   width: 100%;
   border-radius: 12px 12px 0px 0px;
@@ -241,6 +287,10 @@ body {
   color: var(--colorTextBlack);
 }
 
+.dark .project-card-title {
+  color: var(--color-white);
+}
+
 .project-item-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -255,6 +305,11 @@ body {
   border-width: 1px;
   padding: 4px;
   border-radius: 30px;
+}
+
+.dark .project-item-tecnology {
+  color: var(--color-white);
+  border: solid 1px var(--borderColor);
 }
 
 .button-link {
