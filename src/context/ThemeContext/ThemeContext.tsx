@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  type ReactNode,
-} from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -17,22 +11,18 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    return (localStorage.getItem('theme') as Theme) || 'light';
+    const saved = (localStorage.getItem('theme') as Theme) || 'light';
+    document.documentElement.classList.toggle('dark', saved === 'dark');
+    return saved;
   });
 
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (theme === 'dark') {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-    localStorage.setItem('theme', theme);
-  }, [theme]);
-
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+
+    localStorage.setItem('theme', newTheme);
+
+    document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
   return (
