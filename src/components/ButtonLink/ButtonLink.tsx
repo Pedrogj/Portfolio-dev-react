@@ -7,7 +7,7 @@ interface ButtonLinkProps {
 export const ButtonLink = ({ label, href }: ButtonLinkProps) => {
   return (
     <a
-      className="header-links"
+      className="button-links"
       href={href}
     >
       {label}

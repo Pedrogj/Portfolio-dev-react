@@ -110,7 +110,7 @@ body {
   gap: 1rem;
 }
 
-.header-links {
+.button-links {
   background-color: #3998b6;
   font-weight: 600;
   text-decoration: none;
@@ -118,9 +118,10 @@ body {
   padding: 12px 20px;
   text-align: center;
   border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.header-links:hover {
+.button-links:hover {
   background-color: #29768e;
 }
 
