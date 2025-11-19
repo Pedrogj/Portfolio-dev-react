@@ -1,17 +1,24 @@
-import imgPerfil from "../../../../public/images/perfil.jpg";
+import imgPerfil from '../../../../public/images/perfil.jpg';
+import { ButtonLink } from '../../ButtonLink/ButtonLink';
 
 export const ImageCard = () => {
   return (
     <div className="header-card-image">
-      <img className="header-image" src={imgPerfil} alt="img-profile" />
+      <img
+        className="header-image"
+        src={imgPerfil}
+        alt="img-profile"
+      />
 
       <div className="header-content-links">
-        <a className="header-links" href="#">
-          Ver Portfolio
-        </a>
-        <a className="header-links" href="#">
-          Contacto
-        </a>
+        <ButtonLink
+          label="Ver Portfolio"
+          href="#"
+        />
+        <ButtonLink
+          label="Contacto"
+          href="#"
+        />
       </div>
     </div>
   );
