@@ -1,20 +1,20 @@
-import logoJs from "../../public/images/js.png";
-import logoHtml from "../../public/images/html-5.png";
-import logoCss from "../../public/images/css-3.png";
-import logoWP from "../../public/images/wordpress.png";
-import logoReact from "../../public/images/react.png";
-import logoTs from "../../public/images/typescript.png";
-import logoSupa from "../../public/images/supabase.png";
-import git from "../../public/images/Git.png";
-import gitHub from "../../public/images/gitHub.png";
+import logoJs from '../../public/images/js.png';
+import logoHtml from '../../public/images/html-5.png';
+import logoCss from '../../public/images/css-3.png';
+import logoWP from '../../public/images/wordpress.png';
+import logoReact from '../../public/images/react.png';
+import logoTs from '../../public/images/typescript.png';
+import logoSupa from '../../public/images/supabase.png';
+import git from '../../public/images/Git.png';
+import gitHub from '../../public/images/gitHub.png';
 
-import projectImg1 from "../../public/images/project-img.jpg";
-import projectImg2 from "../../public/images/img-project-2.jpg";
-import projectImg3 from "../../public/images/img-project-3.jpg";
+import projectImg1 from '../../public/images/project-img.jpg';
+import projectImg2 from '../../public/images/img-project-2.jpg';
+import projectImg3 from '../../public/images/img-project-3.jpg';
 
-import whatsApp from "../../public/images/whatsapp.png";
-import linkedin from "../../public/images/linkedin.png";
-import email from "../../public/images/correo.png";
+import whatsApp from '../../public/images/whatsapp.png';
+import linkedin from '../../public/images/linkedin.png';
+import email from '../../public/images/correo.png';
 
 interface DataIcons {
   id: number;
@@ -39,47 +39,47 @@ interface ContactData {
 export const icons: DataIcons[] = [
   {
     id: 0,
-    name: "JavaScript",
+    name: 'JavaScript',
     urlImage: logoJs,
   },
   {
     id: 1,
-    name: "Html",
+    name: 'Html',
     urlImage: logoHtml,
   },
   {
     id: 2,
-    name: "Css",
+    name: 'Css',
     urlImage: logoCss,
   },
   {
     id: 3,
-    name: "WordPress",
+    name: 'WordPress',
     urlImage: logoWP,
   },
   {
     id: 4,
-    name: "React Js",
+    name: 'React Js',
     urlImage: logoReact,
   },
   {
     id: 5,
-    name: "TypeScript",
+    name: 'TypeScript',
     urlImage: logoTs,
   },
   {
     id: 6,
-    name: "Supabase",
+    name: 'Supabase',
     urlImage: logoSupa,
   },
   {
     id: 7,
-    name: "Git",
+    name: 'Git',
     urlImage: git,
   },
   {
     id: 8,
-    name: "GitHub",
+    name: 'GitHub',
     urlImage: gitHub,
   },
 ];
@@ -88,20 +88,20 @@ export const projects: ProjectData[] = [
   {
     id: 1,
     urlImage: projectImg1,
-    title: "Title-Project",
-    tags: ["React", "Redux", "Context Api", "React Router"],
+    title: 'Title-Project',
+    tags: ['React', 'Redux', 'Context Api', 'React Router'],
   },
   {
     id: 2,
     urlImage: projectImg2,
-    title: "Title Project 2",
-    tags: ["React", "Redux", "Context Api"],
+    title: 'Title Project 2',
+    tags: ['React', 'Redux', 'Context Api'],
   },
   {
     id: 3,
     urlImage: projectImg3,
-    title: "Title Project 3",
-    tags: ["React", "Redux", "Css"],
+    title: 'Title Project 3',
+    tags: ['React', 'Redux', 'Css'],
   },
 ];
 
@@ -109,19 +109,19 @@ export const contactData: ContactData[] = [
   {
     id: 1,
     urlImage: whatsApp,
-    text: "+56 9 7893 8591",
-    link: "https://wa.link/ukbn7q",
+    text: '+56 9 7893 8591',
+    link: 'https://wa.link/ukbn7q',
   },
   {
     id: 2,
     urlImage: linkedin,
-    text: "Pedro Perez",
-    link: "www.linkedin.com/in/pedrodev-web",
+    text: 'Pedro Perez',
+    link: 'www.linkedin.com/in/pedrodev-web',
   },
   {
     id: 3,
     urlImage: email,
-    text: "pedro@novusdevs.com",
-    link: "mailto:pedro@novusdevs.com",
+    text: 'pedro.perez@novusdevs.com',
+    link: 'mailto:pedro.perez@novusdevs.com',
   },
 ];
